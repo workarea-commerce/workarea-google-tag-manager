@@ -38,15 +38,16 @@ desc "Release version #{Workarea::GoogleTagManager::VERSION} of the gem"
 task :release do
   host = "https://#{ENV['BUNDLE_GEMS__WEBLINC__COM']}@gems.weblinc.com"
 
-  Rake::Task['workarea:changelog'].execute
-  system 'git add CHANGELOG.md'
-  system 'git commit -m "Update CHANGELOG"'
-  system 'git push origin HEAD'
+  #Rake::Task['workarea:changelog'].execute
+  #system 'git add CHANGELOG.md'
+  #system 'git commit -m "Update CHANGELOG"'
+  #system 'git push origin HEAD'
 
   system "git tag -a v#{Workarea::GoogleTagManager::VERSION} -m 'Tagging #{Workarea::GoogleTagManager::VERSION}'"
   system 'git push --tags'
 
   system "gem build workarea-google_tag_manager.gemspec"
+  system "gem push workarea-google_tag_manager-#{Workarea::GoogleTagManager::VERSION}.gem"
   system "gem push workarea-google_tag_manager-#{Workarea::GoogleTagManager::VERSION}.gem --host #{host}"
   system "rm workarea-google_tag_manager-#{Workarea::GoogleTagManager::VERSION}.gem"
 end
