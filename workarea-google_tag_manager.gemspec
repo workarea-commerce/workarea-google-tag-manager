@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Workarea::GoogleTagManager::VERSION
   s.authors     = ['Jake Beresford']
   s.email       = ['jberesford@workarea.com']
-  s.homepage    = 'http://www.workarea.com'
+  s.homepage    = 'https://github.com/workarea-commerce/workarea-google_tag_manager'
   s.summary     = 'Google Tag Manager for the Workarea Commerce Platform'
   s.description = 'Provides Google Tag Manager integration for the Workarea Commerce Platform'
 

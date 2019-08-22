@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "git@github.com:#{repo}.git" }
 
 # Declare your gem's dependencies in tag_manager.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -11,4 +12,4 @@ gemspec
 # your gem to rubygems.org.
 
 # To use a debugger
-gem 'workarea', source: 'https://gems.weblinc.com'
+gem 'workarea'
