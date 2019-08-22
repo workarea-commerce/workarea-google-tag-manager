@@ -12,6 +12,8 @@ Gem::Specification.new do |s|
   s.description = 'Provides Google Tag Manager integration for the Workarea Commerce Platform'
 
   s.files = `git ls-files`.split("\n")
+
+  s.license = 'Business Software License'
   s.test_files = Dir['test/**/*']
 
   s.add_dependency 'workarea', '~> 3.x'
