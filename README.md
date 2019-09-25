@@ -1,4 +1,5 @@
-# Workarea Tag Manager
+Workarea Tag Manager
+================================================================================
 
 Google Tag Manager plugin for the Workarea platform.
 Including Enhanced ecommerce configuration.
@@ -7,15 +8,35 @@ Do not use this plugin for Google Analytics, workarea-google-analytics is well m
 
 Tag manager Sets up a dataLayer on the window and pushes all data to the dataLayer. This is read by GTM and can be used in custom variables.
 
-## Configuring Google Tag Manager
+Getting Started
+--------------------------------------------------------------------------------
 
-In your applications workarea.rb initializer add the following configuration
+Add the gem to your application's Gemfile:
+
+```ruby
+# ...
+gem 'workarea-google_tag_manager'
+# ...
+```
+
+Update your application's bundle.
+
+```bash
+cd path/to/application
+bundle
+```
+
+Configuration
+--------------------------------------------------------------------------------
+
+In your applications `config/initializer/workarea.rb` add the following configuration:
 
 ```ruby
 Workarea.config.google_tag_manager.container_id = 'your-container-id'
 ```
 
-## Shared Events
+Shared Events
+--------------------------------------------------------------------------------
 
 These Events are re-used by many of the events detailed in the Summary of events below
 
@@ -47,7 +68,8 @@ dataLayer:
         }
     }
 
-## Summary of Events
+Summary of Events
+--------------------------------------------------------------------------------
 
 ### Category View
 
@@ -297,43 +319,12 @@ dataLayer:
         }
     }
 
-## Getting Started
+Workarea Commerce Documentation
+--------------------------------------------------------------------------------
 
-This gem contains a rails engine that must be mounted onto a host Rails application.
+See [https://developer.workarea.com](https://developer.workarea.com) for Workarea Commerce documentation.
 
-You must have access to a WebLinc gems server to use this gem. Add your gems server credentials to Bundler:
+License
+--------------------------------------------------------------------------------
 
-    bundle config gems.weblinc.com my_username:my_password
-
-Or set the appropriate environment variable in a shell startup file:
-
-    export BUNDLE_GEMS__WEBLINC__COM='my_username:my_password'
-
-Then add the gem to your application's Gemfile specifying the source:
-
-    # ...
-    gem 'workarea-google_tag_manager', source: 'https://gems.weblinc.com'
-    # ...
-
-Or use a source block:
-
-    # ...
-    source 'https://gems.weblinc.com' do
-      gem 'workarea-google_tag_manager'
-    end
-    # ...
-
-Update your application's bundle.
-
-    cd path/to/application
-    bundle
-
-## Workarea Platform Documentation
-
-See [http://developer.weblinc.com](http://developer.weblinc.com) for Workarea platform documentation.
-
-## Copyright & Licensing
-
-Copyright Workarea 2015. All rights reserved.
-
-For licensing, contact sales@workarea.com.
+Workarea Google Tag Manager is released under the [Business Software License](LICENSE)
