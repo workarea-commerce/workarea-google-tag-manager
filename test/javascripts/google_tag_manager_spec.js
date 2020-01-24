@@ -114,26 +114,6 @@
             after(teardown);
         });
 
-
-        describe('productQuickView', function () {
-            before(function(){
-                WORKAREA.analytics.fireCallback('productQuickView',
-                    {
-                        "terms" : "query string",
-                        "sort" : "top_sellers",
-                        "page" : 1,
-                    }
-                );
-            });
-
-            it('pushes the quickview event to the dataLayer', function () {
-                expect(window.dataLayer[0].event).to.eq('quickview');
-            });
-
-            after(teardown);
-        });
-
-
         describe('productView', function () {
             before(function(){
                 WORKAREA.analytics.fireCallback('productView',
