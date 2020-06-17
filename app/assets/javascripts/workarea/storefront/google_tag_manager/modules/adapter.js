@@ -132,7 +132,7 @@ WORKAREA.analytics.registerAdapter('googleTagManager', function () {
                     'add': {
                         'products': [{
                             'id': payload.id,
-                            'name': payload.name,
+                            'name': payload.product_name,
                             'category': payload.category,
                             'variant': payload.sku,
                             'price': payload.price,
@@ -150,7 +150,7 @@ WORKAREA.analytics.registerAdapter('googleTagManager', function () {
                     'remove': {
                         'products': [{
                             'id': payload.id,
-                            'name': payload.name,
+                            'name': payload.product_name,
                             'category': payload.category,
                             'variant': payload.sku,
                             'price': payload.price,

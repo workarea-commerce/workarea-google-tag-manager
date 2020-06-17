@@ -151,7 +151,7 @@
                     {
                         'category' : 'Automotive',
                         'id' : '4AF99AB7C8',
-                        'name' : 'Heavy Duty Iron Bag',
+                        'product_name' : 'Heavy Duty Iron Bag',
                         'price' : 80.76,
                         'quantity' : '1',
                         'sale' : false,
@@ -187,7 +187,7 @@
                     {
                         'category' : 'Automotive',
                         'id' : '4AF99AB7C8',
-                        'name' : 'Heavy Duty Iron Bag',
+                        'product_name' : 'Heavy Duty Iron Bag',
                         'price' : 80.76,
                         'quantity' : '1',
                         'sale' : false,
