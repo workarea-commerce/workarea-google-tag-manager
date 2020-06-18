@@ -1,3 +1,28 @@
+Workarea Google Tag Manager 4.3.3 (2020-06-18)
+--------------------------------------------------------------------------------
+
+*   Use `product_name` in Order Item Payloads
+
+    When the `addToCart` and `removeFromCart` analytics events are fired,
+    the payload is populated from the `#order_item_analytics_data` helper in
+    Ruby. This payload stores the product name in an attribute called
+    `product_name`, but the analytics adapter was written to use the `.name`
+    attribute, so when analytics events made it to GTM, they would not be
+    populated with the product name. To fix this, the `product_name` field
+    is now used in both the `addToCart` and `removeFromCart` analytics
+    events in the google tag manager adapter.
+
+    GTM-2
+
+    Tom Scott
+
+*   Update README
+
+
+    Matt Duffy
+
+
+
 Workarea Google Tag Manager 4.3.2 (2019-08-22)
 --------------------------------------------------------------------------------
 
