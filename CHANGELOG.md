@@ -16,11 +16,6 @@ Workarea Google Tag Manager 4.3.3 (2020-06-18)
 
     Tom Scott
 
-*   Update README
-
-
-    Matt Duffy
-
 
 
 Workarea Google Tag Manager 4.3.2 (2019-08-22)
